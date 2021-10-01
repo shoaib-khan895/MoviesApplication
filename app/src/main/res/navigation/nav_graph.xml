@@ -17,7 +17,9 @@
         tools:layout="@layout/upcoming_data" />
     <action
         android:id="@+id/action_global_popularData"
-        app:destination="@id/popularData" />
+        app:destination="@id/popularData"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true"/>
     <action
         android:id="@+id/action_global_upcomingData"
         app:destination="@id/upcomingData"
