@@ -25,8 +25,8 @@ class PopularData : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val newView = inflater.inflate(R.layout.popular_data, container, false)
-        return newView
+        val view = inflater.inflate(R.layout.popular_data, container, false)
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

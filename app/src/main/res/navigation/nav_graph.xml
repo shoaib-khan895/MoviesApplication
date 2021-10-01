@@ -3,26 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/popularData">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.movie.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first" >
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:id="@+id/popularData"
+        android:name="com.example.movie.PopularData"
+        android:label="popular_data"
+        tools:layout="@layout/popular_data" />
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.movie.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second" >
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:id="@+id/upcomingData"
+        android:name="com.example.movie.UpcomingData"
+        android:label="upcoming_data"
+        tools:layout="@layout/upcoming_data" />
+    <action
+        android:id="@+id/action_global_popularData"
+        app:destination="@id/popularData" />
+    <action
+        android:id="@+id/action_global_upcomingData"
+        app:destination="@id/upcomingData"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
 </navigation>
