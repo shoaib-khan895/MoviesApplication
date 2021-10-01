@@ -10,6 +10,8 @@
         <entry key="app/src/main/res/layout/movie_item.xml" value="0.5" />
         <entry key="app/src/main/res/layout/movie_items.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/nav_host.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/popular_data.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/upcoming_data.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/menu/nav_item.xml" value="0.19583333333333333" />
       </map>
     </option>
