@@ -17,6 +17,4 @@ data class MovieUpcoming(
     @SerializedName("overview")
     val desc: String
 
-) : Parcelable {
-    constructor() : this("", "", "", "","")
-}
+) : Parcelable

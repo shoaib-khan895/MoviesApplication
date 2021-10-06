@@ -11,7 +11,6 @@ import com.example.movie.models.Movie
 import com.example.movie.models.MovieResponse
 import com.example.movie.services.MovieApiInterface
 import com.example.movie.services.MovieApiService
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.popular_data.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -40,7 +39,6 @@ class PopularData : Fragment() {
             rv_movies_list.adapter = MovieAdapter(movies)
         }
     }
-
     fun getMovieData(Callback: (List<Movie>) -> Unit) {
         val apiService = MovieApiService.getInstance().create(MovieApiInterface::class.java)
         apiService.getMovieList().enqueue(object : Callback<MovieResponse> {

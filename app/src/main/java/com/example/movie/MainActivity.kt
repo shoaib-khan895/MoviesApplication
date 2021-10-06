@@ -18,22 +18,16 @@ class MainActivity : AppCompatActivity() {
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.btn_popular -> {
-                    blank_text.visibility = View.GONE
 //                    supportFragmentManager.beginTransaction().add(R.id.container, PopularData())
 //                        .commit()
                     navController.navigate(R.id.action_global_popularData)
-
                 }
                 R.id.btn_upcoming -> {
-                    blank_text.visibility = View.GONE
 //                    supportFragmentManager.beginTransaction().add(R.id.container, UpcomingData())
 //                        .commit()
                     navController.navigate(R.id.action_global_upcomingData)
-
-
                 }
             }
-
             true
         }
     }
