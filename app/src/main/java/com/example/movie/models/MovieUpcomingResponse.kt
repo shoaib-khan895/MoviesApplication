@@ -9,4 +9,4 @@ data class MovieUpcomingResponse(
     @SerializedName("results")
     val upcoming: List<MovieUpcoming>
 
-    ) : Parcelable
+) : Parcelable

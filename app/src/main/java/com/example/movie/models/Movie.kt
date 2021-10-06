@@ -17,5 +17,5 @@ data class Movie(
     @SerializedName("overview")
     val desc: String
 
-    ) : Parcelable
+) : Parcelable
 

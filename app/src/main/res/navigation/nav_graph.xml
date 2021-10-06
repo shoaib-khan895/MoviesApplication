@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/popularData"
-        android:name="com.example.movie.PopularData"
+        android:name="com.example.movie.ui.PopularData"
         android:label="popular_data"
         tools:layout="@layout/popular_data" />
     <fragment
         android:id="@+id/upcomingData"
-        android:name="com.example.movie.UpcomingData"
+        android:name="com.example.movie.ui.UpcomingData"
         android:label="upcoming_data"
         tools:layout="@layout/upcoming_data" />
     <action
